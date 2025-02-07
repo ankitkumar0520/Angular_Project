@@ -1,1 +1,17 @@
-<p>new-component works!</p>
+
+
+<h1 [style.color]="title">My name is Ankit</h1>
+<input type="text" (input)="showmsg('showmsg')" />
+<span (click)="showmsg('spanclicked')">Click me</span>
+<br>
+<input type="color" [(ngModel)]="title"/>
+
+<br/>
+
+<label>Select Gender</label>
+<select [(ngModel)]="gender">
+    <option value="">Select</option>
+    <option value="M">M</option>
+    <option value="F">F</option>
+    <option value="O">O</option>
+</select>
